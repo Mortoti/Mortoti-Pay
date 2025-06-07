@@ -4,7 +4,7 @@ Mortoti Pay is a Python-Based simulation of a secure mobile payment system with 
 ## Features
 - Secure account creation with PIN protection
 - Deposit and withdrawal functionality
-- Money transfer between accounts
+- Money transfer between accounts registered in my database
 - Airtime purchase capabilities
 - Balance checking
 - PIN management
