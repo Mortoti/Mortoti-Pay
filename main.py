@@ -1,4 +1,4 @@
-from Class_Vault import *
+from mortoti import *
 print ("Welcome to Mortoti Pay")
 print("1. Create Account")
 print("2. Login")
