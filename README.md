@@ -1,50 +1,70 @@
 # Mortoti Pay
-Mortoti Pay is a Python-Based simulation of a secure mobile payment system with account management, transaction capabilities, and airtime purchase features.
 
-## Features
+Mortoti Pay is a Python-based simulation of a secure mobile payment system that supports account management, transactions, and airtime purchases within a closed user network.
+
+=======================
+🔑 FEATURES
+=======================
+
+📱 Mortoti Number Registration:
+- Users must register with a valid Mortoti number starting with 090 or 095.
+- All transactions can only be made to other users registered in the Mortoti Pay system.
+
+🧰 Core Functionalities:
 - Secure account creation with PIN protection
 - Deposit and withdrawal functionality
-- Money transfer between accounts registered in my database
-- Airtime purchase capabilities
+- Transfer between Mortoti Pay accounts
+- Airtime purchase (for self or others)
 - Balance checking
-- PIN management
-- Account deletion
+- Change PIN
+- Delete account
 - Transaction fee system
 
-## Security Features
-- PIN validation with 3 attempts limit
+=======================
+🔒 SECURITY FEATURES
+=======================
+
+- 3-attempt PIN validation limit
 - PIN hashing using SHA-256
-- Input validation for all operations
 - Secure PIN entry using getpass
-- Transaction validation and error handling
+- Input validation for all operations
+- Error handling for transactions
 
-## Requirements
+=======================
+🛠 REQUIREMENTS
+=======================
+
 - Python 3.x
-- `json` (built-in)
-- `getpass` (built-in)
-- `hashlib` (built-in)
+- Uses built-in modules:
+  - json
+  - getpass
+  - hashlib
 
-## Installation
+=======================
+⚙️ INSTALLATION
+=======================
+
 1. Clone the repository:
-```bash
-git clone https://github.com/Mortoti/mortoti-pay.git
-```
-2. Run the main file:
-```bash
-python main.py
-```
+   git clone https://github.com/Mortoti/mortoti-pay.git
 
-## Usage
-The system provides a simple menu-driven interface:
+2. Navigate into the folder and run:
+   cd mortoti-pay
+   python main.py
+
+=======================
+📘 USAGE
+=======================
+
 1. Create Account:
-   - Enter a valid phone number (090 or 095 prefix)
+   - Enter a phone number starting with 090 or 095
    - Set a 4-digit PIN
+
 2. Login:
-   - Enter your phone number
-   - Validate with PIN
-3. Available Operations:
+   - Enter registered Mortoti number and PIN
+
+3. Main Menu:
    - Deposit money
-   - Transfer to other accounts
+   - Transfer funds
    - Withdraw cash
    - Purchase airtime
    - Check balance
@@ -52,34 +72,71 @@ The system provides a simple menu-driven interface:
    - Delete account
    - Logout
 
-## Transaction Fees
-- Amounts under GHS 100: Fixed fee of 0.5 GHS
-- Amounts GHS 100 and above: 1% of transaction amount
+=======================
+💸 TRANSACTION FEES
+=======================
 
-## Data Storage
-- User data is stored securely in `users.json`
-- PINs are hashed before storage
-- Balance and transaction history maintained per account
+- Below GHS 100: Flat fee of GHS 0.50
+- GHS 100 and above: 1% of the transaction amount
 
-## Contributing
-Contributions are welcome! Please:
-1. Fork the repository
+=======================
+💾 DATA STORAGE
+=======================
+
+- User info stored in users.json
+- PINs hashed before saving
+- Each account maintains balance 
+
+=======================
+🤝 CONTRIBUTING
+=======================
+
+1. Fork the repo
 2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+3. Commit changes
+4. Open a pull request
 
-## License
+=======================
+📜 LICENSE — MIT
+=======================
+
 MIT License
 
-## Author
-- Mortoti-Agogyi Jephthah Lorlornyo
-- Backend Developer in training
-- Focused on FinTech, payments, and real world logic systems
-- [Email](mortoti.dev@gmail.com)
+Copyright (c) 2025 Mortoti
 
-## Future Goals
-- Move Data from JSON to SQLite or PostgreSQL
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in  
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
+THE SOFTWARE.
+
+=======================
+👨‍💻 AUTHOR
+=======================
+
+Mortoti-Agogyi Jephthah Lorlornyo  
+Backend Developer in training  
+Focus: FinTech, payments, and real-world logic systems  
+Email: mortoti.dev@gmail.com
+
+=======================
+🎯 FUTURE GOALS
+=======================
+
+- Move data from JSON to SQLite/PostgreSQL
 - Add unit tests
-- Build a Django-based web version
+- Build Django-based web version
 - Add session/auth systems
-- Refractor into a proper API
+- Refactor into a REST API
