@@ -2,15 +2,14 @@
 
 Mortoti Pay is a Python-based simulation of a secure mobile payment system that supports account management, transactions, and airtime purchases within a closed user network.
 
-=======================
-🔑 FEATURES
-=======================
+# FEATURES
 
-📱 Mortoti Number Registration:
+
+## Mortoti Number Registration:
 - Users must register with a valid Mortoti number starting with 090 or 095.
 - All transactions can only be made to other users registered in the Mortoti Pay system.
 
-🧰 Core Functionalities:
+## Core Functionalities:
 - Secure account creation with PIN protection
 - Deposit and withdrawal functionality
 - Transfer between Mortoti Pay accounts
@@ -20,9 +19,9 @@ Mortoti Pay is a Python-based simulation of a secure mobile payment system that 
 - Delete account
 - Transaction fee system
 
-=======================
-🔒 SECURITY FEATURES
-=======================
+
+## SECURITY FEATURES
+
 
 - 3-attempt PIN validation limit
 - PIN hashing using SHA-256
@@ -30,9 +29,9 @@ Mortoti Pay is a Python-based simulation of a secure mobile payment system that 
 - Input validation for all operations
 - Error handling for transactions
 
-=======================
-🛠 REQUIREMENTS
-=======================
+
+## REQUIREMENTS
+
 
 - Python 3.x
 - Uses built-in modules:
@@ -40,9 +39,9 @@ Mortoti Pay is a Python-based simulation of a secure mobile payment system that 
   - getpass
   - hashlib
 
-=======================
-⚙️ INSTALLATION
-=======================
+
+## INSTALLATION
+
 
 1. Clone the repository:
    git clone https://github.com/Mortoti/mortoti-pay.git
@@ -51,9 +50,9 @@ Mortoti Pay is a Python-based simulation of a secure mobile payment system that 
    cd mortoti-pay
    python main.py
 
-=======================
-📘 USAGE
-=======================
+
+## USAGE
+
 
 1. Create Account:
    - Enter a phone number starting with 090 or 095
@@ -72,33 +71,33 @@ Mortoti Pay is a Python-based simulation of a secure mobile payment system that 
    - Delete account
    - Logout
 
-=======================
-💸 TRANSACTION FEES
-=======================
+
+## TRANSACTION FEES
+
 
 - Below GHS 100: Flat fee of GHS 0.50
 - GHS 100 and above: 1% of the transaction amount
 
-=======================
-💾 DATA STORAGE
-=======================
+
+## DATA STORAGE
+
 
 - User info stored in users.json
 - PINs hashed before saving
 - Each account maintains balance 
 
-=======================
-🤝 CONTRIBUTING
-=======================
+
+## CONTRIBUTING
+
 
 1. Fork the repo
 2. Create a feature branch
 3. Commit changes
 4. Open a pull request
 
-=======================
-📜 LICENSE — MIT
-=======================
+
+## LICENSE — MIT
+
 
 MIT License
 
@@ -122,18 +121,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
 THE SOFTWARE.
 
-=======================
-👨‍💻 AUTHOR
-=======================
+
+## AUTHOR
+
 
 Mortoti-Agogyi Jephthah Lorlornyo  
 Backend Developer in training  
 Focus: FinTech, payments, and real-world logic systems  
 Email: mortoti.dev@gmail.com
 
-=======================
-🎯 FUTURE GOALS
-=======================
+
+## FUTURE GOALS
+
 
 - Move data from JSON to SQLite/PostgreSQL
 - Add unit tests
